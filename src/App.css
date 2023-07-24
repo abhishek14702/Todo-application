@@ -1,38 +1,134 @@
+/* App.css */
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-top: 30px;
+}
+/* App.css */
+
+/* Page background color */
+body {
+  background-color: #38e5ee; /* Light blue */
+}
+.container-fluid mt-5 bg-lightblue
+{
+  background-color: #3bf1eeff;
+}
+/* Card styling */
+.card-custom {
+  background-color: #f1f179; /* Yellow */
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  padding: 15px;
+}
+
+/* Heading text color */
+.card-custom .card-title {
+  color: #32cd32; /* Light green */
+}
+
+/* Search button color */
+.search button {
+  background-color: #32cd32; /* Light green */
   color: white;
+  border: none;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.search button:hover {
+  background-color: #228b22;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.addtask {
+  display: grid;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.d-flex {
+  display: grid;
+}
+.form-control{
+  display: grid;
+}
+.addtask input,
+.addtask button {
+  font-size: 16px;
+  padding: 10px;
+  margin-right: 10px;
+}
+
+.addtask button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.addtask button:hover {
+  background-color: #45a049;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.search input,
+.search button {
+  font-size: 16px;
+  padding: 10px;
+  margin-right: 10px;
+}
+
+.search button {
+  background-color: #2196f3;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.search button:hover {
+  background-color: #0b7dda;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.list div {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  max-width: 300px;
+  text-align: center;
+}
+
+.list h1 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.list p {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.list button {
+  font-size: 14px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+.list button:hover {
+  background-color: #d32f2f;
 }
